@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light background color */
+    color: #333; /* Dark text color for readability */
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #007bff; /* Primary color for header */
+    padding: 15px 20px;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Navigation Styles */
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .login-btn {
+    background-color: #0056b3; /* Darker blue for button */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: #003f7f; /* Even darker on hover */
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-image: url('path/to/your/image.jpg'); /* Replace with your background image URL */
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .cta-button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Features Section */
+  .features {
+    background-color: #fff; /* White background for features section */
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .features h2 {
+    margin-bottom: 20px;
+    color: #007bff; /* Primary color for headings */
+  }
+  
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .feature-item {
+    background-color: #e9ecef; /* Light gray for feature items */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    background-color: #f1f1f1; /* Light gray for testimonials */
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .testimonial-item {
+    margin: 20px 0;
+    font-style: italic; /* Italic for testimonial text */
+  }
+  
+  /* Contact Form Styles */
+  .contact-container .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .contact-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .contact-container .form-group input,
+  .contact-container .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .contact-container .form-group input:focus,
+  .contact-container .form-group textarea:focus {
+    border-color: #007bff; /* Highlight border color on focus */
+    outline: none;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #007bff; /* Primary color for footer */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column; /* Stack navigation items on smaller screens */
+    }
+  
+    .nav-links li {
+      margin-bottom: 10px; /* Add spacing between stacked items */
+    }
+  }
+  

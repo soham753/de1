@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f9; /* Light gray background for better contrast */
+    color: #333; /* Dark text for readability */
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Navbar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #007bff; /* Primary blue color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10; /* Keep navbar above other content */
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff; /* White logo for contrast */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 30px; /* Increased spacing between nav items */
+}
+
+.nav-links a {
+    color: #ffffff; /* White text for contrast */
+    text-decoration: none;
+    font-weight: 500; /* Slightly bolder text */
+    padding: 8px 12px; /* Added padding for clickable area */
+    border-radius: 4px; /* Rounded corners for hover effect */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover Effect for Navbar Links */
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Light background on hover */
+    color: #007bff; /* Change text color on hover */
+}
+
+/* Login Button Styles */
+.login-btn {
+    background-color: #0056b3; /* Darker blue for button */
+    color: #ffffff; /* White text */
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #003f7f; /* Even darker on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #007bff; /* Primary color for footer */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Button Styles */
+.cta-button {
+    background-color: #007bff; /* Primary button color */
+    color: #ffffff; /* White text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Allow padding and size to work correctly */
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Section Styles */
+section {
+    padding: 40px 20px;
+    background-color: #ffffff; /* White background for sections */
+    border-radius: 8px; /* Rounded corners for sections */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin-bottom: 20px; /* Spacing between sections */
+}
+
+/* Form Styles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding in width calculation */
+    margin-top: 5px;
+    margin-bottom: 15px; /* Better spacing between form fields */
+}
+
+input:focus,
+textarea:focus {
+    border-color: #007bff; /* Highlight border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Headings */
+h2, h3 {
+    color: #333; /* Consistent heading color */
+    margin-bottom: 10px; /* Space below headings */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; /* Stack items on smaller screens */
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin-right: 0; /* Reset margin for stacked layout */
+        margin-bottom: 10px; /* Spacing between stacked items */
+    }
+
+    nav {
+        padding: 10px; /* Reduced padding for smaller screens */
+    }
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
