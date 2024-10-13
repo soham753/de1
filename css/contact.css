@@ -1,0 +1,45 @@
+/* Import the common styles */
+@import url('common.css');
+
+/* Contact Page Specific Styles */
+.contact-container {
+    padding: 40px 20px;
+    background-color: #fff;
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-container h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 20px;
+    }
+}

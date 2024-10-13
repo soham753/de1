@@ -1,0 +1,117 @@
+/* Common Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f9fc; /* Light blue background */
+    color: #333; /* Dark gray text color */
+}
+
+/* Header Styles */
+header {
+    background-color: #0056b3; /* Dark blue color */
+    padding: 15px 20px; /* Padding for top/bottom and left/right */
+    color: white; /* Text color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    position: sticky; /* Sticky header */
+    top: 0; /* Stick to top */
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+header h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Font size for company name */
+}
+
+nav {
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-end; /* Align nav to the right */
+    align-items: center; /* Center items vertically */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for horizontal layout */
+}
+
+nav ul li {
+    margin-left: 20px; /* Space between nav items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color for links */
+    transition: color 0.3s; /* Smooth transition for hover */
+    padding: 10px 15px; /* Padding for clickable area */
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Gold color on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+/* Features Section Styles */
+.features {
+    padding: 40px 20px; /* Padding for the section */
+    text-align: center; /* Center text */
+    background-image: url('background.jpg'); /* Background image */
+    background-size: cover; /* Cover the section */
+    background-attachment: fixed; /* Fixed background */
+    color: white; /* Text color */
+}
+
+.features h2 {
+    font-size: 32px; /* Heading size */
+    margin-bottom: 20px; /* Space below heading */
+    color: #0056b3; /* Dark blue color */
+}
+
+.feature-list {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px; /* Space between feature items */
+    justify-items: center; /* Center items */
+}
+
+.feature {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    padding: 20px; /* Padding inside each feature box */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+    text-align: left; /* Left align text */
+    width: 100%; /* Full width of the grid item */
+}
+
+.feature:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.feature h3 {
+    font-size: 24px; /* Subheading size */
+    color: #0056b3; /* Dark blue color */
+    margin-bottom: 10px; /* Space below subheading */
+}
+
+.feature p {
+    color: #333; /* Darker gray for text */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center; /* Center text */
+    padding: 20px; /* Padding */
+    background-color: #0056b3; /* Dark blue color */
+    color: white; /* Text color */
+    position: relative; /* Positioning for footer */
+    bottom: 0; /* Align to bottom */
+    width: 100%; /* Full width */
+}

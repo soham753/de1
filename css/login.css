@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Light background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.login-container {
+    background-color: #ffffff; /* White background for the container */
+    padding: 40px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    animation: fadeIn 0.5s ease-in; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Start slightly above */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* End at original position */
+    }
+}
+
+.login-header {
+    text-align: center; /* Center the header text */
+}
+
+.login-header h1 {
+    color: #0056b3; /* Dark blue color */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.login-header p {
+    color: #666; /* Subtitle color */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Space between form fields */
+}
+
+.form-group label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below label */
+    color: #333; /* Label color */
+}
+
+.form-group input {
+    width: 100%; /* Full width for input fields */
+    padding: 10px; /* Padding for input */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+.form-group input:focus {
+    border-color: #0056b3; /* Change border color on focus */
+    outline: none; /* Remove outline */
+}
+
+.error-message {
+    color: red; /* Red color for error messages */
+    font-size: 14px; /* Font size for error messages */
+    display: none; /* Hide error messages by default */
+}
+
+.login-button {
+    background-color: #0056b3; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Padding for button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size for button */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s, transform 0.3s; /* Animation on hover */
+}
+
+.login-button:hover {
+    background-color: #003d7a; /* Darker blue on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.register-link {
+    text-align: center; /* Center text */
+    margin-top: 15px; /* Space above */
+}
+
+.register-link a {
+    color: #0056b3; /* Dark blue color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.register-link a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

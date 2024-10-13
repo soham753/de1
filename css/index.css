@@ -1,0 +1,489 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Navbar Styles */
+/* Header Styles */
+header {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 20px; /* Padding for header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.container {
+    max-width: 1200px; /* Limit width of header */
+    margin: 0 auto; /* Center the container */
+    display: flex; /* Flex layout for alignment */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+}
+
+.company-name {
+    font-size: 1.5rem; /* Font size for company name */
+    color: #007bff; /* Company name color */
+    margin: 0; /* Reset margin */
+}
+
+.navbar {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Reset padding */
+    display: flex; /* Flex layout for nav */
+}
+
+.navbar li {
+    margin-left: 20px; /* Spacing between links */
+}
+
+.navbar a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Text color */
+    font-weight: bold; /* Bold text */
+}
+
+.navbar a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    min-height: 60vh;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+/* Section Styles */
+.section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Features Layout */
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Testimonials */
+blockquote {
+    border-left: 5px solid #007bff;
+    padding: 10px 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    font-style: italic;
+    background-color: #f9f9f9;
+}
+
+/* FAQ Section */
+.faq-item {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+/* Call to Action Styles */
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    text-align: center;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Login Button Styles */
+.login-button {
+    background-color: #ffffff;
+    color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #007bff;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+.login-button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+
+/* Animation */
+@keyframes vibrate {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 0); }
+    40% { transform: translate(2px, 0); }
+    60% { transform: translate(-2px, 0); }
+    80% { transform: translate(2px, 0); }
+    100% { transform: translate(0); }
+}
+
+.vibrate {
+    animation: vibrate 0.5s linear infinite;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item {
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+/* Enhanced Drag-and-Drop Area */
+.upload-area {
+    border: 2px dashed #007bff; /* Dashed border */
+    background-color: #f0f8ff; /* Light background */
+    padding: 40px; /* Padding inside the box */
+    text-align: center; /* Center text */
+    margin: 20px auto; /* Centering */
+    border-radius: 12px; /* Rounded corners */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+    height: 200px; /* Fixed height */
+    width: 90%; /* Responsive width */
+    max-width: 600px; /* Limit max width */
+    margin-left: auto; /* Centering */
+    margin-right: auto; /* Centering */
+}
+
+.upload-area:hover {
+    background-color: rgba(0, 123, 255, 0.1); /* Change background color on hover */
+    border-color: #0056b3; /* Darker border color on hover */
+}
+
+.upload-area p {
+    margin: 0; /* Reset margin */
+    font-size: 1.2rem; /* Increase font size */
+    color: #333; /* Text color */
+}
+
+/* Upload Button Styles */
+.upload-button {
+    display: inline-block; /* Display inline block */
+    padding: 10px 20px; /* Padding for button */
+    margin-top: 20px; /* Space above button */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    font-size: 1rem; /* Font size */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.upload-button:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}
+
+.upload-button:active {
+    transform: translateY(1px); /* Slightly move down on click */
+}
+/* How It Works Section */
+.how-it-works {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 40px 20px; /* Padding for spacing */
+    text-align: center; /* Centered text */
+}
+
+.how-it-works h2 {
+    font-size: 2rem; /* Heading size */
+    color: #007bff; /* Primary color */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.steps {
+    display: flex; /* Flexbox for layout */
+    justify-content: center; /* Center items */
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+    gap: 20px; /* Space between steps */
+}
+
+.step {
+    background-color: #ffffff; /* White background for each step */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 20px; /* Padding inside each step */
+    width: 300px; /* Fixed width for steps */
+    transition: transform 0.3s; /* Animation for hover */
+}
+
+.step:hover {
+    transform: translateY(-5px); /* Slightly lift the step on hover */
+}
+
+.step-icon {
+    margin-bottom: 10px; /* Space below the icon */
+}
+
+.step-icon img {
+    width: 60px; /* Icon size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.step h3 {
+    font-size: 1.5rem; /* Step title size */
+    color: #333; /* Dark text for readability */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.step p {
+    font-size: 1rem; /* Text size for description */
+    color: #666; /* Gray color for description */
+}
+
+/* Benefits Section */
+.benefits {
+    background-color: #f0f8ff; /* Light background */
+    padding: 40px 20px; /* Padding for spacing */
+    text-align: center; /* Centered text */
+}
+
+.benefits h2 {
+    font-size: 2rem; /* Heading size */
+    color: #007bff; /* Primary color */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.benefit-list {
+    display: flex; /* Flexbox for layout */
+    justify-content: center; /* Center items */
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+    gap: 20px; /* Space between items */
+}
+
+.benefit-item {
+    background-color: #ffffff; /* White background for each benefit */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 20px; /* Padding inside each item */
+    width: 250px; /* Fixed width for items */
+    transition: transform 0.3s; /* Animation for hover */
+}
+
+.benefit-item:hover {
+    transform: translateY(-5px); /* Lift on hover */
+}
+
+.benefit-item h3 {
+    color: #333; /* Dark text for titles */
+    margin-bottom: 10px; /* Space below title */
+}
+
+/* User Testimonials Section */
+.user-testimonials {
+    background-color: #ffffff; /* White background */
+    padding: 40px 20px; /* Padding for spacing */
+    text-align: center; /* Centered text */
+}
+
+.user-testimonials h2 {
+    font-size: 2rem; /* Heading size */
+    color: #007bff; /* Primary color */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.testimonials {
+    display: flex; /* Flexbox for layout */
+    justify-content: center; /* Center items */
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+    gap: 20px; /* Space between testimonials */
+}
+
+.testimonial-item {
+    background-color: #f9f9f9; /* Light background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 20px; /* Padding inside each item */
+    width: 300px; /* Fixed width for items */
+}
+
+/* FAQ Section */
+/* FAQ Section */
+.faq {
+    background-color: #e9f1fc; /* Light blue background */
+    padding: 40px 20px; /* Padding for spacing */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.faq h2 {
+    font-size: 2rem; /* Heading size */
+    color: #003366; /* Dark blue color for the heading */
+    margin-bottom: 20px; /* Space below heading */
+    text-align: center; /* Center the heading */
+}
+
+.faq-item {
+    margin: 15px 0; /* Space between questions */
+    background-color: #ffffff; /* White background for each item */
+    border: 1px solid #007bff; /* Blue border for each item */
+    border-radius: 8px; /* Rounded corners for items */
+    padding: 15px; /* Padding inside each item */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.faq-item:hover {
+    background-color: #f0f8ff; /* Light blue on hover */
+}
+
+.faq-item h3 {
+    font-size: 1.2rem; /* Question size */
+    color: #003366; /* Dark blue color for questions */
+}
+
+.faq-item p {
+    font-size: 1rem; /* Answer size */
+    color: #333; /* Dark text for answers */
+}
+
+/* Hero Section */
+/* Hero Section */
+/* Hero Section */
+.hero {
+    background-image: url('bg.png'); /* Replace with your image path */
+    background-size: 50%; /* Set the background image to 50% of the section size */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Keep the background fixed */
+    height: 60vh; /* Set the height as needed */
+    display: flex; /* Flexbox for centering content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    color: rgb(255, 255, 255); /* Text color */
+    text-align: center; /* Center text */
+    padding: 20px; /* Optional: Add padding to the section */
+    background-color: antiquewhite;
+}
+
+.hero-content {
+    background-color: rgba(240, 248, 255, 0.825); /* Semi-transparent background for better readability */
+    padding: 20px; /* Padding for content */
+    border-radius: 10px; /* Rounded corners */
+    color: #003366;
+}
+/* Set text colors */
+.hero-content h1 {
+    color: #003366; /* Dark blue for the heading */
+    font-size: 2.5rem; /* Adjust size as needed */
+}
+
+.hero-content p {
+    color: #003366; /* Dark blue for the paragraph */
+    font-size: 1.2rem; /* Adjust size as needed */
+}
+/* Popup Styles */
+/* Popup Box Styles */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with opacity */
+    justify-content: center; /* Center the popup */
+    align-items: center; /* Center the popup */
+}
+
+.popup-content {
+    background-color: #fff; /* White background */
+    padding: 40px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center text */
+    width: 700px; /* Fixed width */
+}
+
+.close-button {
+    color: #aaa; /* Gray color */
+    float: right; /* Align to the right */
+    font-size: 28px; /* Font size */
+    font-weight: bold; /* Bold font */
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black; /* Color on hover */
+    text-decoration: none; /* No underline */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.upload-area {
+    border: 2px dashed #007bff; /* Dashed border */
+    padding: 30px; /* Padding */
+    margin: 20px ; /* Margin for spacing */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.upload-area:hover {
+    background-color: #f0f8ff; /* Light blue background on hover */
+}
+
+.file-upload-label {
+    color: #007bff; /* Blue color */
+    cursor: pointer; /* Pointer cursor */
+}
+
+
